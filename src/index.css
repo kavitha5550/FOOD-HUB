@@ -1,0 +1,17 @@
+/* body{
+   margin: auto;
+   padding: 0;
+   box-sizing: border-box; 
+   width:100vh;
+height:100vh;
+font-family: poppins;
+} */
+/* Hide scrollbar but keep scroll functionality */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
