@@ -41,12 +41,12 @@ const Cart = () => {
       >
         {indexPage?.filter((item) => {
     // if search is empty, show all items
-    if (search || search.trim() === "") return true;
-
+    const safeSearch=(search||"").trim().toLowerCase();
+    if (safeSearch === "") return true;
     // otherwise, filter items that match the search
     return (item?.name || "")
       .toLowerCase()
-      .includes(search.toLowerCase());
+      .includes(safeSearch);
   })
           .map((foods, index) => (
             <div
